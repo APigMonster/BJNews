@@ -51,6 +51,7 @@ public class GuideActivity extends Activity {
         iv_red_point.getViewTreeObserver().addOnGlobalLayoutListener(new GuideGlobalLayoutListener());
 
         //获取页面滑动的百分比
+        //addOnPageChangeListener() 而不是 setOnxxxxListener()
         vp_guide.addOnPageChangeListener(new GuideOnPageChangeListener());
 
     }
