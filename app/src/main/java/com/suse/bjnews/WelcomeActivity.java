@@ -1,6 +1,7 @@
 package com.suse.bjnews;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 public class WelcomeActivity extends Activity {
 
+    public static final String START_MAIN = "start_main";
     private RelativeLayout rl_welcome_root;
 
     @Override
@@ -60,7 +62,16 @@ public class WelcomeActivity extends Activity {
 
         @Override
         public void onAnimationEnd(Animation animation) {
-            Toast.makeText(WelcomeActivity.this, "动画结束了", Toast.LENGTH_SHORT).show();
+            //判断是否进入过主界面
+            boolean isStartMain = CacheUtils.getBoolean(WelcomeActivity.this, START_MAIN);
+            if (isStartMain){
+                //进入过主界面
+                startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+            }else {
+                startActivity(new Intent(WelcomeActivity.this, GuideActivity.class));
+            }
+            //关闭欢迎页面
+            finish();
         }
 
         @Override
