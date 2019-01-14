@@ -20,6 +20,7 @@ public class WelcomeActivity extends Activity {
         setContentView(R.layout.activity_welcome);
 
         rl_welcome_root = findViewById(R.id.rl_welcome_root);
+        //设置动画
         setAnimation();
     }
 
