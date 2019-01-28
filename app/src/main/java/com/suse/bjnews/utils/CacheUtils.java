@@ -1,4 +1,4 @@
-package com.suse.bjnews;
+package com.suse.bjnews.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

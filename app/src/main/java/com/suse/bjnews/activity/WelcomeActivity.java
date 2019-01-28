@@ -1,4 +1,4 @@
-package com.suse.bjnews;
+package com.suse.bjnews.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,7 +9,9 @@ import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
+
+import com.suse.bjnews.utils.CacheUtils;
+import com.suse.bjnews.R;
 
 public class WelcomeActivity extends Activity {
 

@@ -1,4 +1,4 @@
-package com.suse.bjnews;
+package com.suse.bjnews.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,6 +14,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import com.suse.bjnews.utils.CacheUtils;
+import com.suse.bjnews.utils.DensityUtil;
+import com.suse.bjnews.R;
 
 import java.util.ArrayList;
 import java.util.List;
