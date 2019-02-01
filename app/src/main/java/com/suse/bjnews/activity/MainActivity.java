@@ -28,7 +28,7 @@ public class MainActivity extends SlidingFragmentActivity {
         SlidingMenu slidingMenu = getSlidingMenu();
         slidingMenu.setMode(SlidingMenu.LEFT);
         //设置滑动模式
-        slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
         //设置主页面占用宽度
         slidingMenu.setBehindOffset(DensityUtil.dip2px(MainActivity.this, 270));
 

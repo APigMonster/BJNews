@@ -6,12 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="这是主菜单"
-        android:textColor="#df0909"
-        android:textSize="20sp" />
 
 </FrameLayout>
